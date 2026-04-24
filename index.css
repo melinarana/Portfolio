@@ -49,3 +49,22 @@ nav {
     color: red;
     font-size: 12px;
 }
+.banner{
+    background-color: red;
+    height: 500px;
+    width: 100%;
+
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.background{
+    height: 400px;
+    width: 100%;
+    background-image: url(./resource/images/georgi-kalaydzhiev-l16OjjNeGYk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
