@@ -54,6 +54,7 @@ nav {
     height: 500px;
     width: 100%;
 
+
 }
 .banner img{
     height: 100%;
@@ -68,3 +69,20 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 }
+@media(max-width:480px){
+    body{
+        background-color: rgb(231, 189, 240);  
+    }
+    .menu{
+        display: none;
+    }
+    .menu_icon{
+        display:block;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+}
+    }
+    .menu_icon svg{
+        color:black;
+    }
