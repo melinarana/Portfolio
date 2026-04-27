@@ -1,30 +1,40 @@
 body {
     font-family: Arial;
-    font-size:20px;
+    margin: 0;
+    padding: 0;
     /* background-color: rgb(23, 116, 147);*/
 }
+/* .home p{
+        color: black;
+        font-size: 18px;
+        line-height: 1.6;
+        margin: 10px 20px;
+        margin-top: 20px;
+}
+     */
 /* Navbar */
 nav {
-    /*background-color: black;*/
-    padding: 6px 20px;
+    background-color:rgb(3, 3, 46);
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 1px 1px 10px #a54c1c;
+    box-shadow: 1px 1px 10px #0c0c0c;
 }
 
 /* Logo */
 .logo {
-    background-color: green;
-    height: 40px;
-    width: 40px;
+    background-color: #0a3d62;
+    height: 50px;
+    width: 50px;
     font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
     color: white;
-
+    font-family:times new roman;
+    font-weight: bold;
 }
 
 /* Menu */
@@ -37,8 +47,8 @@ nav {
 
 /* Links */
 .menu a {
-    font-size: 15px;
-    color: black;
+    font-size: 20px;
+    color: gray;
     text-decoration: none;
     cursor: pointer;
     transition: all .5s linear;
@@ -46,29 +56,75 @@ nav {
 
 /* Hover */
 .menu a:hover {
-    color: red;
+    color: rgb(28, 96, 185);
     font-size: 12px;
 }
+.menu_icon{
+    display:none;
+}
+
+.banner_main{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+.banner_data{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    align-items:center;
+    justify-content: center;
+}
+.banner_data h1{
+    margin: 0px;
+    padding: 0px;
+    font-size: 44px;
+    font-style:italic;
+}
+.banner_data div{
+    font-size:38px;
+    text-transform: capitalize;
+    font-weight:700;
+}
+.banner_buttons button{
+    background-color:red;
+    padding: 18px 2px;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:10px;
+    animation:alternate infinite 5s buttonanimate;
+}
 .banner{
-    background-color: red;
+    /* background-color: green; */
     height: 500px;
     width: 100%;
-
-
+    margin: 20px 0px;
+    border-radius: 20px;
+    overflow: clip;
 }
 .banner img{
+   
     height: 100%;
     width: 100%;
     object-fit: cover;
-
 }
 .background{
     height: 400px;
     width: 100%;
-    background-image: url(./resource/images/georgi-kalaydzhiev-l16OjjNeGYk-unsplash.jpg);
+    background-image: url("./resource/images/pexels-feyzayildirimphoto-19880807.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+@keyframes buttonanimate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(45deg);
+    }
+}
+
 @media(max-width:480px){
     body{
         background-color: rgb(231, 189, 240);  
