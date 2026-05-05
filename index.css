@@ -1,9 +1,9 @@
-body {
+/* body {
     font-family: Arial;
     margin: 0;
     padding: 0;
-    /* background-color: rgb(23, 116, 147);*/
-}
+    background-color: rgb(23, 116, 147);
+} */
 /* .home p{
         color: black;
         font-size: 18px;
@@ -116,6 +116,119 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+ol{
+    color:red;
+    font-size:24px;
+}
+
+/* form container */
+.about_body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* FIXED typo */
+    /* background-color: rgb(27, 27, 238);
+} */
+
+/* form box */
+.form {
+    width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+}
+
+/* input groups */
+.form_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form_menu label {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form_menu input {
+    height: 40px;
+    padding: 0 6px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form_menu input::placeholder {
+    text-transform: capitalize;
+}
+
+/* checkbox */
+.form_check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form_check label {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+/* button container */
+.form_button {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(27, 90, 235);
+    overflow: hidden;
+}
+
+/* actual button */
+.form_button button {
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* animation layer */
+.animation_button {
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    transition: all 2s ease-in-out;
+}
+
+
+
 @keyframes buttonanimate{
     from{
         transform: rotate(0deg);
@@ -142,3 +255,109 @@ nav {
     .menu_icon svg{
         color:black;
     }
+}
+
+
+
+
+/* REGESTRSTION FORM */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 1000px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgba(0,0,0,0.15);
+}
+
+/* LEFT SIDE */
+.left {
+  flex: 1;
+  background: white;
+  padding: 30px;
+}
+
+.left h2 {
+  margin-bottom: 20px;
+  color:rgb(164, 13, 164);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* RIGHT SIDE */
+.right {
+  flex: 1;
+  background:plum;
+  padding: 30px;
+  color: black;
+}
+
+.right h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUT STYLE */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/* RIGHT INPUT STYLE */
+.right input {
+  border: none;
+}
+
+/* ROW (side by side inputs) */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color:rgb(165, 17, 165);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+button:hover {
+  background: #f1f1f1;
+}
+
+/* CHECKBOX */
+label {
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+label input{
+    width:16px;
+    height:16px;
+    
+}
